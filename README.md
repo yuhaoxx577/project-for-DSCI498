@@ -17,6 +17,29 @@ The two networks are trained adversarially. The discriminator learns to distingu
 
 DCGAN is used as the baseline because it is a classic and effective architecture for image generation, and it provides a clear starting point for later improvements.
 
+## Training Setup
+
+The baseline model is trained using adversarial learning. The discriminator is trained to distinguish real Monet paintings from generated images, while the generator is trained to produce images that can fool the discriminator.
+
+Binary Cross Entropy (BCE) loss is used for both the generator and the discriminator. The model is optimized using the Adam optimizer, which is commonly used in DCGAN training for stable convergence.
+
+## Experiment Configuration
+
+The main training configuration is as follows:
+
+- image size: 128 × 128
+- batch size: 32
+- latent dimension: 100
+- generator feature size: 64
+- discriminator feature size: 64
+- number of channels: 3
+- learning rate: 0.0002
+- Adam beta1: 0.5
+- Adam beta2: 0.999
+- planned training length: 100 epochs
+
+At the current midterm stage, the main goal is not to present a final optimized result, but to verify that the baseline training pipeline is working correctly and that the model begins to learn Monet-like visual patterns.
+
 ## Data Source
 This project uses the Monet image dataset from Baidu AI Studio, which is based on the “I’m Something of a Painter Myself” dataset. The project focuses on the Monet JPEG image collection for training.
 
