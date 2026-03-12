@@ -38,7 +38,6 @@ The main training configuration is as follows:
 - Adam beta2: 0.999
 - planned training length: 100 epochs
 
-At the current midterm stage, the main goal is not to present a final optimized result, but to verify that the baseline training pipeline is working correctly and that the model begins to learn Monet-like visual patterns.
 
 ## Data Source
 This project uses the Monet image dataset from Baidu AI Studio, which is based on the “I’m Something of a Painter Myself” dataset. The project focuses on the Monet JPEG image collection for training.
